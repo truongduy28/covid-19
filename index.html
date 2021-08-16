@@ -11,12 +11,20 @@
 </head>
 
 <body>
+
     <div class="container">
-        <h1 style="text-align: center;">Theo dỗi tình hình Covid 19 tại Việt Nam</h1>
+        <h1>Theo dỗi tình hình <a style="color: orangered;">Covid-19</a> tại Việt Nam</h1>
         <div class="banner">
             <video autoplay loop muted src="Global COVID-19 Prevention.mp4"></video>
             <div class="overlay"></div>
-            <button>Thực hiện quy tắt 5K</button>
+            <label class="label" for="check">Thực hiện quy tắt 5K</label>
+            <input hidden type="checkbox" id="check">
+            <div class="modal">
+                <img src="https://soyte.binhduong.gov.vn/PublishingImages/TH%C3%94NG%20%C4%90I%E1%BB%86P%205K.jpg" alt="">
+            </div>
+            <label class="overlay2" for="check">
+                
+            </label>
         </div>
         <div class="content">
             <div class="allContries">
@@ -141,8 +149,26 @@
                     </div>
                 </div> -->
             </div>
+            <div class="reload">
+                <button id="reload" onclick="reload()">Cập nhật lại dữ liệu</button>
+            </div>
         </div>
+        <div class="footer">
+            <video muted autoplay loop src="Covid 19 _ CoronaVirus Cinematic Stock Footage & No Copyright Music.mp4"></video>
+            <div class="overlay"></div>
+            <div class="content">
+                <p>HÃY GIỮ AN TOÀN CHO BẠN VÀ CHÚNG TA GIỮA ĐẠI DỊCH</p>
+                <h2>COVID-19</h2>
+            </div>
+        </div>
+        <ul class="copyright">
+            <li>Bản quyền thuộc <a href="https://truongduy28.000webhostapp.com/">Tudisoft</a> 2021</li>
+            <li>Dữ liệu được cập nhật liên tục và trực tiếp theo nguồn <a href="http://tuoitre.vn">báo Tuổi trẻ</a></li>
+        </ul>
+
     </div>
+
+    <label for="check"></label>
 </body>
 <script src="mainjs.js"></script>
 <!-- <script>
