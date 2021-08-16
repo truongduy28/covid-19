@@ -3,6 +3,7 @@ const urlAPI = 'https://tuoitre.io/covid-mix';
 const toanQuoc = document.querySelector('.dataContries');
 const tinh = document.querySelector('.province');
 const search = document.querySelector('#search');
+const pageload = document.querySelector('.pageload');
 document.getElementById('search').addEventListener('change', function() {
     console.log('You selected: ', this.value);
     // 
@@ -149,3 +150,9 @@ fetch(urlAPI)
 function reload() {
     location.reload()
 }
+window.addEventListener('load', function() {
+    pageload.style.opacity = '0';
+    setTimeout(function() {
+        pageload.parentElement.removeChild(pageload);
+    }, 2000);
+})
